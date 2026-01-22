@@ -1,0 +1,19 @@
+/Category/get-category - get
+/Category/add-category - add
+/Category/delete-category/:id - remove
+/Category/update-category/:id - edit
+
+/Brands/get-brands
+/Brands/delete-brand/:id
+/Brands/update-brand/:id
+/Brands/add-brand
+
+/product/add-product
+/product/get-products
+/product/delete-product/:id
+/product/update-product/:id
+
+/order/get-order-products
+/order/delete-order/:id
+/order/clear-order
+/order/get-order-by-id

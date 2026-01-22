@@ -1,0 +1,129 @@
+
+
+ // try {
+    //   setLoading(true);
+    //   await dispatch(addProduct(formData));
+    //   console.log(formData)
+    //   toast.success("Product added successfully!", { autoClose: 2000 });
+    //   navigate("/dashboard/products");
+    //   clearForm();
+    // } catch (error) {
+    //   console.error("AddProduct error:", error);
+    //   toast.error("Failed to add product.", { autoClose: 2000 });
+    // } finally {
+    //   setLoading(false);
+    // }
+
+
+
+
+   // orders_user: elem.orders_user.map((elem) => ({
+    //   id: elem.id,
+    //   productName: elem.productName,
+    //   price: elem.price,
+    //   brand: elem.brand,
+    //   category: elem.category,
+    //   code: elem.code,
+    //   count: elem.count,
+    //   date: elem.date,
+    //   disCount: elem.disCount,
+    //   description: elem.description,
+    //   view: elem.view,
+    //   images: [
+    //     {
+    //       id: elem.id,
+    //       file: elem.file,
+    //       base64: elem.base64,
+    //     },
+    //   ],
+    //   colors: [
+    //     { colorId: elem.colorId, color: elem.color },
+    //     { colorId: elem.colorId, color: elem.color },
+    //   ],
+    // })),
+
+
+
+  <header className="flex justify-between items-center px-4">
+        <Link to={"/dashboard/orders"}>
+          <Button variant="contained" sx={{ color: "white" }}>
+            <ArrowLeft />
+            Back
+          </Button>
+        </Link>
+        <Button
+          variant="contained"
+          color="error"
+          className="flex justify-center items-center gap-2"
+        >
+          Delete User <DeleteIcon />
+        </Button>
+      </header>
+      <main className="flex flex-col lg:flex-row gap-8 mt-8 px-4">
+        <Box className="w-full lg:w-1/2 bg-white rounded-xl shadow p-4">
+          <Typography className="font-semibold mb-2">User: {id}</Typography>
+
+          <img
+            src="https://variety.com/wp-content/uploads/2015/02/spidey.jpg?w=1000&h=667&crop=1"
+            alt="user"
+            className="w-28 h-28 rounded-full object-cover my-4"
+          />
+
+          <ul className="space-y-1 text-sm">
+            <li>
+              <b>Name:</b> Yusuf
+            </li>
+            <li>
+              <b>SurName:</b> Dodarov
+            </li>
+            <li>
+              <b>Phone:</b> 987442223
+            </li>
+            <li>
+              <b>Address:</b> Arkdddkk
+            </li>
+            <li>
+              <b>Date:</b> 25.03.2025
+            </li>
+          </ul>
+
+          <fieldset className="mt-4 border rounded p-3 text-sm">
+            <legend className="px-2">Message</legend>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </fieldset>
+        </Box>
+
+        <Box className="w-full lg:w-1/2 bg-white rounded-xl shadow p-4">
+          <Typography className="font-semibold mb-3">
+            Total Price: $490
+          </Typography>
+
+          <TableContainer component={Paper}>
+            <Table size="small">
+              <TableHead>
+                <TableRow>
+                  <TableCell>Name</TableCell>
+                  <TableCell>Category</TableCell>
+                  <TableCell>Brand</TableCell>
+                  <TableCell>Count</TableCell>
+                </TableRow>
+              </TableHead>
+              <TableBody>
+                <TableRow>
+                  <TableCell className="flex items-center gap-2">
+                    <img
+                      src="https://petapixel.com/assets/uploads/2023/06/Boss-Infinite-800x533.jpg"
+                      alt=""
+                      className="w-8 h-8 rounded-full"
+                    />
+                    <Typography variant="body2">Hello</Typography>
+                  </TableCell>
+                  <TableCell>Phones</TableCell>
+                  <TableCell>Samsung</TableCell>
+                  <TableCell>5</TableCell>
+                </TableRow>
+              </TableBody>
+            </Table>
+          </TableContainer>
+        </Box>
+      </main>
