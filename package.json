@@ -31,8 +31,7 @@
     "react-toastify": "^11.0.5",
     "styled-components": "^6.3.5",
     "tailwindcss": "^4.1.18",
-    "uuid": "^13.0.0",
-    "uuidv4": "^6.2.13"
+    "uuid": "^13.0.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
