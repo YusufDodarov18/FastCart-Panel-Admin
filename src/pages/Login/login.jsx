@@ -107,7 +107,7 @@ function Login() {
           }}
         >
           <h2
-            className={`${darkMode == "light" ? "text-gray-800" : "text-white"}  text-3xl font-extrabold  mb-6 text-center select-none`}
+            className={`text-3xl font-extrabold  mb-6 text-center select-none`}
           >
             Login
           </h2>
