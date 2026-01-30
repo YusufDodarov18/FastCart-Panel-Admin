@@ -297,7 +297,7 @@ export default function AddProduct() {
                 Create New
               </Button>
             </header>
-            <Box className="flex gap-3 py-4 ">
+            <Box className="flex gap-3 flex-wrap py-4 ">
               {dataColors.map((el) => (
                 <Box
                   sx={{
